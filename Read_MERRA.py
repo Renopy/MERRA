@@ -16,6 +16,6 @@ def read_merra(fp):
         NETCDF[k] =   numpy.flip(array,axis=0)
         NETCDF['lat'] = ( nc.WesternmostLongitude  , nc.EasternmostLongitude ) 
         NETCDF['lon'] = ( nc.SouthernmostLatitude  , nc.NorthernmostLatitude ) 
-        NETCDF['res'] =  { 'x'  : nc.LatitudeResolution  , 'y' = nc.LongitudeResolution }
+        NETCDF['res'] =  { 'x'  : nc.LatitudeResolution  , 'y' : nc.LongitudeResolution }
     return NETCDF
      
